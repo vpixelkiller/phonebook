@@ -1,0 +1,11 @@
+<div class='add-contact'>
+  <h2>Contacts</h2>
+  <%= link_to '+ Add Contact', new_contact_path, class: 'a-button'%>
+</div>
+<table class='contacts'>
+  <tbody>
+    <%= render @contacts %>
+  </tbody>
+</table>
+
+<%# <%= button_to 'Agregar contacto', new_contact_path %1> %>

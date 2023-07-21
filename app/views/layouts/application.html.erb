@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phonebook</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/7ac4b9e110.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class='app'>
+      <div class='title'>
+        <i class="fas fa-address-book"></i>
+        <h1>Phone Book App</h1>
+      </div>
+      <div class='container'>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

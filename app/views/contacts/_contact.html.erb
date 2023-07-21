@@ -1,0 +1,18 @@
+  <div class='card'>
+    <div class='info'>
+      <div class='name'>
+        <%= contact.name %>
+        <%= contact.surname %>
+      </div>
+      <i class="fas fa-phone-alt"></i>
+      <%= contact.phone %>
+    </div>
+    <div class='icon-button'>
+      <%= button_to '0', contact_path(contact), method: :delete, class: 'button-icon' %>
+      <i class="fas fa-trash-alt icon-icon"></i>
+    </div>
+
+
+
+  </div>
+
