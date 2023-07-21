@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.app {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 3rem;
+    padding-inline: 4rem;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #555;
+    background-color: #f1f1f2;
+
+    .add-contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+        margin-bottom: 1.5rem;
+    }
+
+    .title {
+        max-width: 450px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+
+        .fas {
+            font-size: xx-large;
+        }
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.a-button {
+    border: darkcyan;
+    color: white;
+    background-color: dodgerblue;
+    padding: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contacts {
+    background-color: blue;
+}
+
