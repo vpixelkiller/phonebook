@@ -1,3 +1,8 @@
+<% if flash[:notice] %>
+  <div class="alert alert-success">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 <div class='add-contact'>
   <h2>
     <%= t('contacts') %>

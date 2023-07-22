@@ -34,6 +34,7 @@
 
 .icon-button {
     // padding-inline-end: 3rem;
+    display: inline-grid;
 
 
     .fas {
@@ -43,7 +44,7 @@
 
     .button-icon {
         position: absolute;
-        padding: 0.7rem;
+        padding: 0.9rem;
         border-radius: 0.2rem;
         height: fit-content;
         opacity: 0;
@@ -59,7 +60,6 @@ input[type='text' i] {
     border-bottom-width: thin;
     border-radius: 0.15rem;
     width: 100%;
-    max-width: 13rem;
     height: 1.5rem;
     padding-inline: 0.45rem;
 }
@@ -79,10 +79,13 @@ input[type='submit' i] {
     margin: 1rem;    
   }
 }
-form {
-    // margin-top: 3rem;
-    // width: 19rem;
-    // align-items: center;
+
+.contact-form {
+  min-width: 20rem;
+
+  input {
+    max-width: 13rem;
+  }
 }
 
 .field {
@@ -91,13 +94,20 @@ form {
   margin: 0.6rem;
 }
 
+.info {
+  .fa-phone-alt {
+    font-size: 0.7rem;
+    margin-right: 0.3rem;
+  }
+}
+
 ::placeholder {
   color: gray;
   opacity: 0.25;
 }
 
 a {
-    background-color: red;
+    background-color: #d34f4f;
     padding: 0.6rem;
     padding-inline: 2rem;
     border-radius: 0.2rem;
@@ -105,3 +115,4 @@ a {
     text-decoration: none;
     margin: 1rem;
 }
+

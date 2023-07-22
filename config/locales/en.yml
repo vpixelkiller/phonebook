@@ -11,4 +11,4 @@ en:
   input_contact_name: 'Insert your first name'
   input_contact_surname: 'Insert your last name'
   input_contact_phone: 'Insert your phone number'
-  input_search: 'Search by last name'
+  input_search: 'Search for contacts by last name'
