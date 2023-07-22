@@ -1,0 +1,4 @@
+<%= form_tag(contacts_path, method: "get", class: 'search') do %>
+  <%= text_field_tag :query, params[:query], class: 'search-field', placeholder: t('input_search') %>
+<% end %>
+

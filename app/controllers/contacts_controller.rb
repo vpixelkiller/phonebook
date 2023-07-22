@@ -2,7 +2,11 @@ class ContactsController < ApplicationController
   before_action :set_contact, only: [:destroy]
 
   def index
+    query = params[:query]
+
     @contacts = Contact.all
+
+    @contacts = Contact.where('surname LIKE ?', "%#{query}%") if query.present?
   end
 
   def new
@@ -17,7 +21,6 @@ class ContactsController < ApplicationController
     else
       render :new
     end
-    # redirect_to root_path
   end
 
   def destroy

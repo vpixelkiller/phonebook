@@ -1,11 +1,13 @@
 <div class='add-contact'>
-  <h2>Contacts</h2>
-  <%= link_to '+ Add Contact', new_contact_path, class: 'a-button'%>
+  <h2>
+    <%= t('contacts') %>
+  </h2>
+  <%= link_to t('add_contact'), new_contact_path, class: 'a-button'%>
 </div>
+<%= render 'search' %>
 <table class='contacts'>
   <tbody>
     <%= render @contacts %>
   </tbody>
 </table>
 
-<%# <%= button_to 'Agregar contacto', new_contact_path %1> %>

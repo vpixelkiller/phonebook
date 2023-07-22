@@ -44,6 +44,11 @@
             font-size: xx-large;
         }
     }
+
+    .form-container {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 h1 {
@@ -70,3 +75,16 @@ h2 {
     background-color: blue;
 }
 
+.search {
+    margin-bottom: 1rem;
+    padding-inline-end: 1rem;
+
+    .search-button {
+        display: none;
+    }
+
+    .search-field {
+        max-width: none;
+        width: 100%;
+    }
+}
