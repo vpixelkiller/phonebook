@@ -17,16 +17,18 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
-      redirect_to contacts_path, notice: 'Contact was successfully created.'
+      redirect_to root_path, notice: t('contact_created')
     else
-      render :new
+      response = generate_response
+
+      render :new, notice: response
     end
   end
 
   def destroy
     @contact.destroy
 
-    redirect_to contacts_url, notice: 'Contact was successfully destroyed.'
+    redirect_to contacts_url, notice: t('contact_destroyed')
   end
 
   private
@@ -37,5 +39,13 @@ class ContactsController < ApplicationController
 
   def contact_params
     params.require(:contact).permit(:name, :surname, :phone)
+  end
+
+  def generate_response
+    errors = @contact.errors.full_messages
+
+    return errors.first unless errors.empty?
+
+    t('failed_create_contact')
   end
 end

@@ -12,3 +12,8 @@ en:
   input_contact_surname: 'Insert your last name'
   input_contact_phone: 'Insert your phone number'
   input_search: 'Search for contacts by last name'
+  should_be_phone: 'Should be a 9-digit number' 
+  should_contain_full_name: 'Should contain both first and last name'
+  failed_create_contact: 'Failed to save the contact with valid attributes.'
+  contact_created: 'Contact was successfully created.'
+  contact_destroyed:  'Contact was successfully destroyed.'
